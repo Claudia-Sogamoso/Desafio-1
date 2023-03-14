@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./imagenes/Vector.png" alt="logo de Alura">
+        <h1 class="titulo">Reto desencriptador Alura Latam</h1>
+    </header>
+    <main>
+        <section class="seccion-1">
+            <textarea class="text-area"  placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion">solo letras minusculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="seccion-2">
+            <textarea class="mensaje" readonly></textarea>
+            <p class="previo"> Ningun mensaje fue encontrado </p>
+            <div class="contenedor-copiar">
+                <button class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        BY CLAUDIA ANDREA SOGAMOSO
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
